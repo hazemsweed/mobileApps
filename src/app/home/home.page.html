@@ -1,0 +1,32 @@
+<ion-card  >
+  <!-- <iframe width="100%"  [src]="saveURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+  <!-- <iframe
+  class="mt-10"
+  width="100%"
+  height="100%"
+  [src]="youtubeItem.url"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+>
+</iframe> -->
+<div *ngIf="saveURL != ''">
+  <iframe
+    class="w-full px-2 lg:w-2/3 xl:w-2/3 center mt-10"
+    width="100%"
+    height="400"
+    [src]="saveURL"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  >
+  </iframe>
+</div>
+<h1>
+  {{'hello'| transloco}}
+</h1>
+</ion-card>

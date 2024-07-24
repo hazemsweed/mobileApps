@@ -1,0 +1,7 @@
+{
+  "name": "najih",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
